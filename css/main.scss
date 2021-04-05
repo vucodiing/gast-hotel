@@ -94,6 +94,7 @@ footer {
     font-size: 20px;
   }
   &__subscribe {
+    position: relative;
     input {
       width: 100%;
     }
@@ -101,6 +102,13 @@ footer {
       @include button-subscribe();
       height: 46px;
       font-size: 14px;
+    }
+    label.error {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #868b98;
     }
   }
   &__copyright {

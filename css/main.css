@@ -80,23 +80,31 @@ footer {
   font-family: "Frank Ruhl Libre", sans-serif;
   color: #fff;
   font-size: 20px; }
-.footer-contact__subscribe input {
-  width: 100%; }
-.footer-contact__subscribe button {
-  color: #fff;
-  padding: 0 10px;
-  border: none;
-  background-color: #0b3d24;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  font-size: 14px;
-  line-height: 46px;
-  height: 46px;
-  font-size: 14px; }
-  .footer-contact__subscribe button:hover {
-    background-color: #fff;
-    color: #0b3d24; }
+.footer-contact__subscribe {
+  position: relative; }
+  .footer-contact__subscribe input {
+    width: 100%; }
+  .footer-contact__subscribe button {
+    color: #fff;
+    padding: 0 10px;
+    border: none;
+    background-color: #0b3d24;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 14px;
+    line-height: 46px;
+    height: 46px;
+    font-size: 14px; }
+    .footer-contact__subscribe button:hover {
+      background-color: #fff;
+      color: #0b3d24; }
+  .footer-contact__subscribe label.error {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #868b98; }
 .footer-contact__copyright {
   color: #868b98;
   display: flex;

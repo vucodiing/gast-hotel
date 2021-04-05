@@ -43,7 +43,7 @@ $(function () {
 // for another ---------------------------------------------------------->
 // validate ---------------------------------------------------------->
 // validate email in footer
-$(".email-footer").validate({
+$("#validate").validate({
   rules: {
     email: {
       required: true,
@@ -53,7 +53,10 @@ $(".email-footer").validate({
   messages: {
     email: {
       required: "Please enter email",
-      email: "Email not true",
+      email: "Email not true of format",
     },
+  },
+  submitHandler: function (form) {
+    form.submit();
   },
 });
