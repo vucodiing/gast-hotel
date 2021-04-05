@@ -156,16 +156,18 @@
     <footer>
       <div class="footer-social">
         <div class="container">
-          <div class="row d-flex justify-content-between align-content-center">
-            <img src="./images/logo-footer.png" alt="logo footer" />
-            <div class="footer-social__icon">
-              <a href="http://facebook.com"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
-              <a href="http://instagram.com"
-                ><i class="fab fa-instagram"></i
-              ></a>
+          <div class="row">
+            <div class="footer-social__logoSocial">
+              <img src="./images/logo-footer.png" alt="logo footer" />
+              <div class="footer-social__icon">
+                <a href="http://facebook.com"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="http://instagram.com"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
@@ -196,8 +198,17 @@
             </div>
             <div class="col-12 col-lg-5">
               <h4>Subscribe to know the latest deals!</h4>
-              <div class="footer-contact__subscribe">
-                <input type="text" placeholder="Email Address" />
+              <div class="footer-contact__subscribe d-flex">
+                <form>
+                  <input
+                    type="text"
+                    placeholder="Email Address"
+                    required
+                    name="email"
+                    class="email-footer"
+                  />
+                </form>
+
                 <button type="submit">SUBSCRIBE</button>
               </div>
             </div>

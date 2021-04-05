@@ -41,7 +41,8 @@ input {
 input,
 textarea {
   text-indent: 10px;
-  font-size: 15px; }
+  font-size: 15px;
+  color: #474b56; }
 
 label {
   margin-bottom: 0;
@@ -51,13 +52,14 @@ footer {
   background-color: #000; }
 
 .footer-social {
-  padding: 80px 0; }
+  padding: 80px 0;
+  text-align: center; }
   .footer-social svg {
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-    height: 60px !important;
-    width: 60px !important;
+    height: 50px !important;
+    width: 50px !important;
     padding: 10px;
     border-radius: 50%;
     color: #fff;
@@ -65,6 +67,8 @@ footer {
     .footer-social svg:hover {
       background-color: #fff;
       color: #000; }
+  .footer-social__logoSocial {
+    width: 100%; }
 
 .footer-line {
   height: 1px;
@@ -77,18 +81,19 @@ footer {
   color: #fff;
   font-size: 20px; }
 .footer-contact__subscribe input {
-  width: calc(100% - 142px); }
+  width: 100%; }
 .footer-contact__subscribe button {
   color: #fff;
-  padding: 10px 25px;
+  padding: 0 10px;
   border: none;
   background-color: #0b3d24;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  font-size: 16px;
-  line-height: 20px;
-  height: 46px; }
+  font-size: 14px;
+  line-height: 46px;
+  height: 46px;
+  font-size: 14px; }
   .footer-contact__subscribe button:hover {
     background-color: #fff;
     color: #0b3d24; }
@@ -96,8 +101,10 @@ footer {
   color: #868b98;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px; }
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  font-size: 13px; }
   .footer-contact__copyright a {
     color: #868b98;
     -webkit-transition: 0.3s ease-in-out;
@@ -107,8 +114,18 @@ footer {
       color: #fff; }
 .footer-contact__law a {
   margin-right: 7px; }
-.footer-contact__info p {
-  margin-bottom: 0;
-  color: #868b98; }
+.footer-contact__info {
+  padding-bottom: 20px;
+  width: 100%; }
+  .footer-contact__info a {
+    color: #868b98;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .footer-contact__info a:hover {
+      color: #fff; }
+  .footer-contact__info p {
+    margin-bottom: 0;
+    color: #868b98; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,15 @@
+@media (min-width: 768px) {
+  .footer-contact__info {
+    width: 33.333333%;
+    float: left; }
 
+  .footer-contact__copyright {
+    justify-content: space-between;
+    flex-direction: inherit; }
+
+  .footer-social__logoSocial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; } }
 
 /*# sourceMappingURL=responsive.css.map */

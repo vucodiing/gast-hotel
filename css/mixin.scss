@@ -1,5 +1,38 @@
 $main-color: #0b3d24;
 $second-color: #000;
+$text-color: #474b56;
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-center-vertical {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horizon {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin cover-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 @mixin link {
   color: #000;
@@ -37,14 +70,14 @@ $second-color: #000;
 }
 @mixin button-subscribe {
   color: #fff;
-  padding: 10px 25px;
+  padding: 0 10px;
   border: none;
   background-color: $main-color;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 46px;
   &:hover {
     background-color: #fff;
     color: $main-color;

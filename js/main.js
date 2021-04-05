@@ -41,3 +41,19 @@ $(function () {
 });
 
 // for another ---------------------------------------------------------->
+// validate ---------------------------------------------------------->
+// validate email in footer
+$(".email-footer").validate({
+  rules: {
+    email: {
+      required: true,
+      email: true,
+    },
+  },
+  messages: {
+    email: {
+      required: "Please enter email",
+      email: "Email not true",
+    },
+  },
+});

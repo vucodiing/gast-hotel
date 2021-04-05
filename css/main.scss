@@ -12,7 +12,7 @@ html {
 }
 body {
   font-family: "Rubik", "Frank Ruhl Libre", sans-serif;
-  color: #474b56;
+  color: $text-color;
   font-size: 15px;
   line-height: 27px;
   font-weight: 400;
@@ -48,6 +48,7 @@ input,
 textarea {
   text-indent: 10px;
   font-size: 15px;
+  color: $text-color;
 }
 label {
   margin-bottom: 0;
@@ -60,10 +61,11 @@ footer {
 }
 .footer-social {
   padding: 80px 0;
+  text-align: center;
   svg {
     @include transition();
-    height: 60px !important;
-    width: 60px !important;
+    height: 50px !important;
+    width: 50px !important;
     padding: 10px;
     border-radius: 50%;
     color: #fff;
@@ -73,7 +75,11 @@ footer {
       color: #000;
     }
   }
+  &__logoSocial {
+    width: 100%;
+  }
 }
+
 .footer-line {
   height: 1px;
   background-color: #373940;
@@ -89,11 +95,12 @@ footer {
   }
   &__subscribe {
     input {
-      width: calc(100% - 142px);
+      width: 100%;
     }
     button {
       @include button-subscribe();
       height: 46px;
+      font-size: 14px;
     }
   }
   &__copyright {
@@ -105,16 +112,26 @@ footer {
         color: #fff;
       }
     }
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    @include flex-center-column();
+    padding: 20px 0;
+    font-size: 13px;
   }
   &__law a {
     margin-right: 7px;
   }
-  &__info p {
-    margin-bottom: 0;
-    color: #868b98;
+  &__info {
+    padding-bottom: 20px;
+    a {
+      color: #868b98;
+      @include transition();
+      &:hover {
+        color: #fff;
+      }
+    }
+    width: 100%;
+    p {
+      margin-bottom: 0;
+      color: #868b98;
+    }
   }
 }
