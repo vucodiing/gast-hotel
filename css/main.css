@@ -9,8 +9,8 @@ html {
   padding: 0; }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
-  color: #999;
+  font-family: "Rubik", "Frank Ruhl Libre", sans-serif;
+  color: #474b56;
   font-size: 15px;
   line-height: 27px;
   font-weight: 400; }
@@ -34,6 +34,10 @@ select:focus,
 img:focus {
   outline: none; }
 
+input {
+  height: 46px;
+  border: 1px solid #dcdcdc; }
+
 input,
 textarea {
   text-indent: 10px;
@@ -42,5 +46,69 @@ textarea {
 label {
   margin-bottom: 0;
   cursor: pointer; }
+
+footer {
+  background-color: #000; }
+
+.footer-social {
+  padding: 80px 0; }
+  .footer-social svg {
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    height: 60px !important;
+    width: 60px !important;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 7px; }
+    .footer-social svg:hover {
+      background-color: #fff;
+      color: #000; }
+
+.footer-line {
+  height: 1px;
+  background-color: #373940; }
+
+.footer-contact .row {
+  padding: 60px 0; }
+.footer-contact h4 {
+  font-family: "Frank Ruhl Libre", sans-serif;
+  color: #fff;
+  font-size: 20px; }
+.footer-contact__subscribe input {
+  width: calc(100% - 142px); }
+.footer-contact__subscribe button {
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  background-color: #0b3d24;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+  line-height: 20px;
+  height: 46px; }
+  .footer-contact__subscribe button:hover {
+    background-color: #fff;
+    color: #0b3d24; }
+.footer-contact__copyright {
+  color: #868b98;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; }
+  .footer-contact__copyright a {
+    color: #868b98;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .footer-contact__copyright a:hover {
+      color: #fff; }
+.footer-contact__law a {
+  margin-right: 7px; }
+.footer-contact__info p {
+  margin-bottom: 0;
+  color: #868b98; }
 
 /*# sourceMappingURL=main.css.map */

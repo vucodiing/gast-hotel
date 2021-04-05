@@ -1,5 +1,5 @@
-$main-color: #ffb400;
-$second-color: #c59d5f;
+$main-color: #0b3d24;
+$second-color: #000;
 
 @mixin link {
   color: #000;
@@ -7,9 +7,9 @@ $second-color: #c59d5f;
     color: $main-color;
   }
 }
-@mixin button-submit {
+@mixin button {
   color: #fff;
-  padding: 10px 25px;
+  padding: 10px;
   border: none;
   background-color: $main-color;
   -webkit-transition: 0.3s ease-in-out;
@@ -21,8 +21,37 @@ $second-color: #c59d5f;
     background-color: $second-color;
   }
 }
+@mixin button-shop {
+  color: $main-color;
+  padding: 10px 25px;
+  border: none;
+  background-color: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+  line-height: 20px;
+  &:hover {
+    background-color: $main-color;
+  }
+}
+@mixin button-subscribe {
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  background-color: $main-color;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+  line-height: 20px;
+  &:hover {
+    background-color: #fff;
+    color: $main-color;
+  }
+}
 @mixin border-color {
-  border: 1px solid #d0d0d0;
+  border: 1px solid #dcdcdc;
 }
 @mixin transition() {
   -webkit-transition: 0.3s ease-in-out;

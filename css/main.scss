@@ -11,8 +11,8 @@ html {
   padding: 0;
 }
 body {
-  font-family: "Nunito Sans", sans-serif;
-  color: #999;
+  font-family: "Rubik", "Frank Ruhl Libre", sans-serif;
+  color: #474b56;
   font-size: 15px;
   line-height: 27px;
   font-weight: 400;
@@ -39,6 +39,10 @@ select:focus,
 img:focus {
   outline: none;
 }
+input {
+  height: 46px;
+  @include border-color();
+}
 
 input,
 textarea {
@@ -48,4 +52,69 @@ textarea {
 label {
   margin-bottom: 0;
   cursor: pointer;
+}
+
+// style for footer
+footer {
+  background-color: #000;
+}
+.footer-social {
+  padding: 80px 0;
+  svg {
+    @include transition();
+    height: 60px !important;
+    width: 60px !important;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 7px;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+.footer-line {
+  height: 1px;
+  background-color: #373940;
+}
+.footer-contact {
+  .row {
+    padding: 60px 0;
+  }
+  h4 {
+    font-family: "Frank Ruhl Libre", sans-serif;
+    color: #fff;
+    font-size: 20px;
+  }
+  &__subscribe {
+    input {
+      width: calc(100% - 142px);
+    }
+    button {
+      @include button-subscribe();
+      height: 46px;
+    }
+  }
+  &__copyright {
+    color: #868b98;
+    a {
+      color: #868b98;
+      @include transition();
+      &:hover {
+        color: #fff;
+      }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  &__law a {
+    margin-right: 7px;
+  }
+  &__info p {
+    margin-bottom: 0;
+    color: #868b98;
+  }
 }
