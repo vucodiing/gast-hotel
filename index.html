@@ -42,6 +42,10 @@
       rel="stylesheet"
       href="./plugins/bootstrap-4.5.2/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="./plugins/daterangepicker/daterangepicker.css"
+    />
     <link rel="stylesheet" href="./plugins/menu/sm-core-css.css" />
     <link rel="stylesheet" href="./plugins/menu/sm-clean.css" />
     <link rel="stylesheet" href="./plugins/slick/slick.css" />
@@ -56,25 +60,65 @@
   </head>
   <body>
     <header>
+      <div class="header-booking d-none d-xl-block">
+        <div class="header-booking__item">
+          <span
+            ><input
+              type="text"
+              autocomplete="off"
+              name="checkIn"
+              value=""
+              id="current-date"
+              placeholder="Check-in"
+          /></span>
+        </div>
+        <div class="header-booking__item">
+          <span
+            ><input
+              type="text"
+              autocomplete="off"
+              name="checkIn"
+              value=""
+              id="current-date"
+              placeholder="Check-out"
+          /></span>
+        </div>
+        <div class="header-booking__item">
+          <div class="header-booking__select">
+            <select>
+              <option value="0">Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+        <div class="header-booking__item">
+          <div class="header-booking__select">
+            <select>
+              <option value="0">Children</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+        <div class="header-booking__item">
+          <button>CHECK AVAILABILITY</button>
+        </div>
+      </div>
       <div class="header-fixed">
         <div class="container">
           <div class="header">
             <div class="header__logo">
-              <img src="./images/" alt="logo web" />
+              <img src="./images/logo-header.png" alt="logo web" />
             </div>
             <div class="header__icon">
-              <!-- group icons search, heart, account, shopping bag... -->
-              <div class="header__icon-group d-none d-lg-flex">
-                <!-- icon search -->
-                <i class="fal fa-search"></i>
-                <!-- icon another -->
-                <i class="fal fa-search"></i>
-                <i class="fal fa-search"></i>
-                <!-- ... -->
-              </div>
-              <!-- icon show on tablet and mobile, show on 1024px -->
+              <!-- icon show on tablet and mobile, show on 1199px -->
               <div
-                class="header__icon-mobile d-block d-lg-none"
+                class="header__icon-mobile d-block d-xl-none"
                 id="show-menu-mobile"
               >
                 <i class="far fa-bars"></i>
@@ -84,65 +128,108 @@
             <!-- main menu -->
             <ul id="main-menu" class="sm sm-clean">
               <li>
-                <a href="index.html">HOME</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="#">MENU 1</a>
+                <a href="our-hotel.html">Our Hotel</a>
                 <ul>
                   <li>
-                    <a href="#">Menu1</a>
-                    <ul>
-                      <li>
-                        <a href="#">Menu1-1</a>
-                      </li>
-                      <li>
-                        <a href="#">Menu1-2</a>
-                      </li>
-                    </ul>
+                    <a href="our-hotel.html">Our Hotel</a>
                   </li>
                   <li>
-                    <a href="#">Menu2</a>
+                    <a href="wellness.html">Wellness</a>
+                  </li>
+                  <li>
+                    <a href="area-attractions.html">Area Attractions</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#">MENU 2</a>
+                <a href="rooms.html">Rooms</a>
+              </li>
+              <li>
+                <a href="offers.html">Offers</a>
+              </li>
+              <li>
+                <a href="dining.html">Dining</a>
+              </li>
+              <li>
+                <a href="features-list.html">Pages</a>
                 <ul>
                   <li>
-                    <a href="#">Menu2</a>
+                    <a href="features-list.html">Features List</a>
                   </li>
                   <li>
-                    <a href="#">Menu2</a>
-                    <ul>
-                      <li>
-                        <a href="#">Menu2-2</a>
-                      </li>
-                      <li>
-                        <a href="#">Menu2-2</a>
-                      </li>
-                    </ul>
+                    <a href="gallery.html">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a href="404.html">404 Page</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#">MENU 3</a>
-                <ul>
-                  <li>
-                    <a href="#">Menu 3</a>
-                  </li>
-                  <li>
-                    <a href="#">Menu 3</a>
-                    <ul>
-                      <li>
-                        <a href="#">Menu3-3</a>
-                      </li>
-                      <li>
-                        <a href="#">Menu3-3</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+                <a
+                  href="https://booking-guarantee.com/Home/SelectDate?hotelKey=IIT&lang=en&currency=USD"
+                  >Booking</a
+                >
               </li>
+              <!-- header-booking show in tablet -->
+              <div
+                class="header-booking d-block d-xl-none header-booking__tablet"
+              >
+                <div class="header-booking__item">
+                  <span
+                    ><input
+                      type="text"
+                      autocomplete="off"
+                      name="checkIn"
+                      value=""
+                      id="current-date"
+                      placeholder="Check-in"
+                  /></span>
+                </div>
+                <div class="header-booking__item">
+                  <span
+                    ><input
+                      type="text"
+                      autocomplete="off"
+                      name="checkIn"
+                      value=""
+                      id="current-date"
+                      placeholder="Check-out"
+                  /></span>
+                </div>
+                <div class="header-booking__group">
+                  <div class="header-booking__item">
+                    <div class="header-booking__select">
+                      <select>
+                        <option value="0">Adults</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="header-booking__item">
+                    <div class="header-booking__select">
+                      <select>
+                        <option value="0">Children</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-booking__item">
+                  <button>CHECK AVAILABILITY</button>
+                </div>
+              </div>
             </ul>
           </div>
         </div>
@@ -238,6 +325,7 @@
 
     <!-- Plugin -->
     <script src="./plugins/bootstrap-4.5.2/js/bootstrap.min.js"></script>
+    <script src="./plugins/daterangepicker/daterangepicker.js"></script>
     <script src="./plugins/menu/jquery.smartmenus.min.js"></script>
     <script src="./plugins/validation1.19.3/jquery.validate.min.js"></script>
     <script src="./plugins/slick/slick.min.js"></script>

@@ -56,7 +56,44 @@ $("#validate").validate({
       email: "Email not true of format",
     },
   },
-  // submitHandler: function (form) {
-  //   form.submit();
-  // },
+});
+
+// daterangepicker -------------------------------------->
+
+$(function () {
+  $('input[name="checkIn"]').daterangepicker({
+    singleDatePicker: true,
+    // startDate: new Date(),
+    // showDropdowns: true,
+    // // timePicker: true,
+    // timePicker24Hour: true,
+    // timePickerIncrement: 10,
+    // // autoUpdateInput: true,
+    // locale: {
+    //   format: "DD/MM/YYYY",
+    // },
+    autoUpdateInput: false,
+    // locale: {
+    //   cancelLabel: "Clear",
+    // },
+  });
+});
+$('input[name="checkIn"]').on("apply.daterangepicker", function (ev, picker) {
+  $(this).val(picker.startDate.format("DD/MM/YYYY"));
+});
+
+// scroll page
+var lastScrollTop = 0;
+$(document).ready(function () {
+  $(window).scroll(function (event) {
+    let pos_body = $("html,body").scrollTop();
+
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+      $(".header-fixed").removeClass("fixed-menu");
+    } else {
+      $(".header-fixed").addClass("fixed-menu");
+    }
+    lastScrollTop = st;
+  });
 });

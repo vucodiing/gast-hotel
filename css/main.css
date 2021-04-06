@@ -1,3 +1,7 @@
+main {
+  height: 1000px;
+  background-color: #c0cae4; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -36,17 +40,95 @@ img:focus {
 
 input {
   height: 46px;
-  border: 1px solid #dcdcdc; }
+  border: 1px solid #dcdcdc;
+  width: 100%; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 46px; }
 
 input,
-textarea {
+textarea,
+select {
   text-indent: 10px;
   font-size: 15px;
   color: #474b56; }
+  input::placeholder,
+  textarea::placeholder,
+  select::placeholder {
+    color: #474b56; }
 
 label {
   margin-bottom: 0;
   cursor: pointer; }
+
+.fixed-menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  box-shadow: 2px 5px 5px #00000059; }
+
+.header-booking {
+  height: 46px; }
+
+.header-booking__tablet {
+  margin: 0px 10px; }
+
+.header-booking__item {
+  width: 100%;
+  float: left; }
+  .header-booking__item span {
+    position: relative; }
+    .header-booking__item span::after {
+      position: absolute;
+      content: "\f073";
+      font-family: "Font Awesome 5 Pro";
+      top: 0px;
+      right: 13px;
+      cursor: pointer;
+      font-size: 16px;
+      color: #0b3d24; }
+  .header-booking__item select {
+    width: 100%;
+    border: 1px solid #dcdcdc; }
+  .header-booking__item button {
+    color: #fff;
+    padding: 10px;
+    border: none;
+    background-color: #0b3d24;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    line-height: 20px;
+    height: 46px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0; }
+    .header-booking__item button:hover {
+      background-color: #000; }
+
+.header-booking__group .header-booking__item {
+  width: 50%; }
+
+.header-booking__select {
+  position: relative; }
+  .header-booking__select::after {
+    position: absolute;
+    content: "\f0c0";
+    font-family: "Font Awesome 5 Pro";
+    top: 16px;
+    right: 13px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #0b3d24; }
+
+.sm-clean a .sub-arrow {
+  background-color: #0b3d24;
+  color: #fff; }
 
 footer {
   background-color: #000; }

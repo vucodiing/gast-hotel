@@ -1,5 +1,15 @@
 @import "./mixin.scss";
 
+@media (min-width: 720px) {
+  .header-booking__group {
+    .header-booking__item {
+      width: 20%;
+    }
+  }
+  .header-booking__item {
+    width: 20%;
+  }
+}
 @media (min-width: 768px) {
   .footer-contact__info {
     width: 33.333333%;
@@ -12,5 +22,14 @@
   .footer-social__logoSocial {
     @include flex-center-vertical();
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  #main-menu {
+    padding-bottom: 0;
+  }
+  .sm-clean a .sub-arrow {
+    background-color: transparent;
   }
 }

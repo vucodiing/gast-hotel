@@ -1,5 +1,9 @@
 @import "./mixin.scss";
 
+main {
+  height: 1000px;
+  background-color: #c0cae4;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -42,19 +46,95 @@ img:focus {
 input {
   height: 46px;
   @include border-color();
+  width: 100%;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 46px;
 }
 
 input,
-textarea {
+textarea,
+select {
   text-indent: 10px;
   font-size: 15px;
   color: $text-color;
+  &::placeholder {
+    color: $text-color;
+  }
 }
 label {
   margin-bottom: 0;
   cursor: pointer;
 }
 
+// style for header
+.fixed-menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  box-shadow: 2px 5px 5px #00000059;
+}
+// for header-booking
+.header-booking {
+  height: 46px;
+}
+.header-booking__tablet {
+  margin: 0px 10px;
+}
+.header-booking__item {
+  width: 100%;
+  float: left;
+  span {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "\f073";
+      font-family: "Font Awesome 5 Pro";
+      top: 0px;
+      right: 13px;
+      cursor: pointer;
+      font-size: 16px;
+      color: $main-color;
+    }
+  }
+  select {
+    width: 100%;
+    @include border-color();
+  }
+  button {
+    @include button();
+    height: 46px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0;
+  }
+}
+.header-booking__group {
+  .header-booking__item {
+    width: 50%;
+  }
+}
+.header-booking__select {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "\f0c0";
+    font-family: "Font Awesome 5 Pro";
+    top: 16px;
+    right: 13px;
+    cursor: pointer;
+    font-size: 16px;
+    color: $main-color;
+  }
+}
+.sm-clean a .sub-arrow {
+  background-color: $main-color;
+  color: #fff;
+}
 // style for footer
 footer {
   background-color: #000;
