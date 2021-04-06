@@ -56,7 +56,7 @@ $("#validate").validate({
       email: "Email not true of format",
     },
   },
-  submitHandler: function (form) {
-    form.submit();
-  },
+  // submitHandler: function (form) {
+  //   form.submit();
+  // },
 });
