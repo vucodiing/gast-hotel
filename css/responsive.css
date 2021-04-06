@@ -23,5 +23,8 @@
 
   .sm-clean a .sub-arrow {
     background-color: transparent; } }
+@media (max-width: 1199px) {
+  #main-menu a {
+    color: #474b56 !important; } }
 
 /*# sourceMappingURL=responsive.css.map */

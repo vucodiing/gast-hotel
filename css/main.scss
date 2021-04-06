@@ -71,12 +71,32 @@ label {
 }
 
 // style for header
+.header-fixed {
+  @include transition();
+}
+
+.header-bg {
+  background-image: url("../images/home/home-slider-01.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -2;
+  height: 700px;
+  top: -70px;
+}
 .fixed-menu {
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 1000;
   box-shadow: 2px 5px 5px #00000059;
+}
+.header {
+  &__logo {
+    img#logo-green {
+      display: none;
+    }
+  }
 }
 // for header-booking
 .header-booking {

@@ -89,11 +89,27 @@ $(document).ready(function () {
     let pos_body = $("html,body").scrollTop();
 
     var st = $(this).scrollTop();
-    if (st > lastScrollTop) {
+    if (st > lastScrollTop || st == lastScrollTop) {
       $(".header-fixed").removeClass("fixed-menu");
     } else {
-      $(".header-fixed").addClass("fixed-menu");
+      if (pos_body > 50) {
+        $(".header-fixed").addClass("fixed-menu");
+        $(".header-fixed").css("background-color", "#fff");
+        $("#main-menu  a").css("color", "#000");
+      } else {
+        $(".header-fixed").removeClass("fixed-menu");
+        $(".header-fixed").css("background-color", "transparent");
+        $("#main-menu  a").css("color", "#fff");
+      }
     }
     lastScrollTop = st;
   });
+  $(".header-fixed").hover(
+    function () {
+      $(".header-fixed").css("background-color", "#fff");
+    },
+    function () {
+      $(".header-fixed").css("background-color", "transparent");
+    }
+  );
 });
