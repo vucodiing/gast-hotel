@@ -34,8 +34,10 @@ $(function () {
   $("#show-menu-mobile").click(function () {
     if ($("#main-menu").css("left") == "-2000px") {
       $("#main-menu").css("left", "0px");
+      $("#show-menu-mobile").css("color", "#000");
     } else {
       $("#main-menu").css("left", "-2000px");
+      $("#show-menu-mobile").css("color", "#fff");
     }
   });
 });
@@ -63,19 +65,7 @@ $("#validate").validate({
 $(function () {
   $('input[name="checkIn"]').daterangepicker({
     singleDatePicker: true,
-    // startDate: new Date(),
-    // showDropdowns: true,
-    // // timePicker: true,
-    // timePicker24Hour: true,
-    // timePickerIncrement: 10,
-    // // autoUpdateInput: true,
-    // locale: {
-    //   format: "DD/MM/YYYY",
-    // },
     autoUpdateInput: false,
-    // locale: {
-    //   cancelLabel: "Clear",
-    // },
   });
 });
 $('input[name="checkIn"]').on("apply.daterangepicker", function (ev, picker) {
@@ -96,10 +86,16 @@ $(document).ready(function () {
         $(".header-fixed").addClass("fixed-menu");
         $(".header-fixed").css("background-color", "#fff");
         $("#main-menu  a").css("color", "#000");
+        $("#logo-green").css("display", "block");
+        $("#logo-white").css("display", "none");
+        $("#show-menu-mobile").css("color", "#000");
       } else {
         $(".header-fixed").removeClass("fixed-menu");
         $(".header-fixed").css("background-color", "transparent");
         $("#main-menu  a").css("color", "#fff");
+        $("#logo-green").css("display", "none");
+        $("#logo-white").css("display", "block");
+        $("#show-menu-mobile").css("color", "#fff");
       }
     }
     lastScrollTop = st;
@@ -107,9 +103,15 @@ $(document).ready(function () {
   $(".header-fixed").hover(
     function () {
       $(".header-fixed").css("background-color", "#fff");
+      $("#main-menu  a").css("color", "#000");
+      $("#logo-green").css("display", "block");
+      $("#logo-white").css("display", "none");
     },
     function () {
       $(".header-fixed").css("background-color", "transparent");
+      $("#main-menu  a").css("color", "#fff");
+      $("#logo-green").css("display", "none");
+      $("#logo-white").css("display", "block");
     }
   );
 });

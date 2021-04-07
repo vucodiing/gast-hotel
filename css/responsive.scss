@@ -32,6 +32,18 @@
   .sm-clean a .sub-arrow {
     background-color: transparent;
   }
+  .header-booking__item span::after {
+    top: -4px;
+  }
+  .header-booking__select::after {
+    top: 11px;
+  }
+  .sm-clean a:hover {
+    color: $main-color !important;
+  }
+  span.sub-arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 1199px) {
