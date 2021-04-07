@@ -40,7 +40,7 @@ img:focus {
 
 input {
   height: 46px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #8b8b8b4d;
   width: 100%; }
 
 select {
@@ -88,6 +88,26 @@ label {
 .header__logo img#logo-green {
   display: none; }
 
+table.table-condensed th.prev.available,
+th.next.available,
+th.month {
+  background-color: #0b3d24;
+  color: #fff;
+  border-radius: 0 !important;
+  padding: 5px; }
+
+.daterangepicker .calendar-table .next span,
+.daterangepicker .calendar-table .prev span {
+  border: solid #fff;
+  border-width: 0 2px 2px 0; }
+
+.daterangepicker td.active,
+button.applyBtn {
+  background-color: #0b3d24; }
+
+button.applyBtn {
+  border: none; }
+
 .header-booking {
   height: 46px; }
 
@@ -110,7 +130,7 @@ label {
       color: #0b3d24; }
   .header-booking__item select {
     width: 100%;
-    border: 1px solid #dcdcdc; }
+    border: 1px solid #8b8b8b4d; }
   .header-booking__item button {
     color: #fff;
     padding: 10px;

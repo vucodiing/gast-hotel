@@ -98,6 +98,29 @@ label {
     }
   }
 }
+
+// style for daterangepicker
+table.table-condensed th.prev.available,
+th.next.available,
+th.month {
+  background-color: $main-color;
+  color: #fff;
+  border-radius: 0 !important;
+  padding: 5px;
+}
+.daterangepicker .calendar-table .next span,
+.daterangepicker .calendar-table .prev span {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+}
+.daterangepicker td.active,
+button.applyBtn {
+  background-color: $main-color;
+}
+button.applyBtn {
+  border: none;
+}
+
 // for header-booking
 .header-booking {
   height: 46px;
