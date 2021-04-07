@@ -1,7 +1,3 @@
-main {
-  height: 1000px;
-  background-color: #c0cae4; }
-
 html {
   scroll-behavior: smooth; }
 
@@ -13,7 +9,7 @@ html {
   padding: 0; }
 
 body {
-  font-family: "Rubik", "Frank Ruhl Libre", sans-serif;
+  font-family: "Frank Ruhl Libre", "Rubik", sans-serif;
   color: #474b56;
   font-size: 15px;
   line-height: 27px;
@@ -69,15 +65,6 @@ label {
   -moz-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out; }
 
-.header-bg {
-  background-image: url("../images/home/home-slider-01.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  z-index: -2;
-  height: 700px;
-  top: -70px; }
-
 .fixed-menu {
   position: fixed;
   top: 0px;
@@ -87,6 +74,52 @@ label {
 
 .header__logo img#logo-green {
   display: none; }
+
+.header-slide {
+  height: 700px;
+  top: -70px; }
+  .header-slide .slick-dots li button:before {
+    content: ""; }
+  .header-slide .slick-dots {
+    bottom: 0px; }
+  .header-slide .slick-dots li {
+    width: 90px; }
+  .header-slide .slick-dots li.slick-active button {
+    background-color: #fff;
+    height: 3px;
+    width: 100%; }
+  .header-slide .slick-dots li button {
+    background-color: #ffffff40;
+    height: 2px;
+    width: 100%;
+    padding: 0; }
+  .header-slide li.slick-active {
+    background-color: #fff;
+    height: 1px; }
+  .header-slide__item {
+    position: relative;
+    text-align: center; }
+    .header-slide__item video {
+      object-fit: cover;
+      background-size: cover; }
+  .header-slide__desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .header-slide__desc h1 {
+      font-size: 52px;
+      color: #fff;
+      line-height: 52px;
+      font-family: "Frank Ruhl Libre", sans-serif; }
+    .header-slide__desc h3 {
+      font-size: 12px;
+      color: #fff;
+      line-height: 16px;
+      font-family: "Rubik", sans-serif; }
+  .header-slide img {
+    height: 700px;
+    width: 100%; }
 
 table.table-condensed th.prev.available,
 th.next.available,
@@ -141,6 +174,7 @@ button.applyBtn {
     transition: 0.3s ease-in-out;
     font-size: 16px;
     line-height: 20px;
+    font-family: "Rubik";
     height: 46px;
     width: 100%;
     font-size: 14px;
@@ -169,6 +203,56 @@ button.applyBtn {
 
 #show-menu-mobile {
   color: #fff; }
+
+.book-room {
+  background-color: #f7f9fa;
+  text-align: center;
+  margin-top: -70px; }
+  .book-room img {
+    width: 100%; }
+  .book-room h1 {
+    font-size: 32px;
+    font-family: "Frank Ruhl Libre"; }
+  .book-room p {
+    font-size: 14px;
+    font-family: "Rubik"; }
+  .book-room button {
+    color: #fff;
+    padding: 10px;
+    border: none;
+    background-color: #0b3d24;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Rubik"; }
+    .book-room button:hover {
+      background-color: #000; }
+  .book-room__padding {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center; }
+
+.room {
+  text-align: center; }
+
+#to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  background: #0b3d24;
+  font-weight: bold;
+  color: #ffffff;
+  size: 30px;
+  display: none;
+  font-family: "Font Awesome 5 Pro"; }
+  #to-top::after {
+    content: "\f077"; }
+  #to-top:hover::after {
+    content: "\f325"; }
 
 footer {
   background-color: #000; }
@@ -257,5 +341,29 @@ footer {
   .footer-contact__info p {
     margin-bottom: 0;
     color: #868b98; }
+
+@-webkit-keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    transform: scale3d(0, 0, 0); }
+  60% {
+    opacity: 0.6;
+    transform: scale3d(1, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1); } }
+@keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    transform: scale3d(0, 0, 0); }
+  60% {
+    opacity: 0.6;
+    transform: scale3d(1, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1); } }
+.slick-active .slide-content {
+  animation-name: fadeInUpSD;
+  animation-duration: 2s; }
 
 /*# sourceMappingURL=main.css.map */

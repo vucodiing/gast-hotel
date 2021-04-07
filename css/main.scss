@@ -1,9 +1,5 @@
 @import "./mixin.scss";
 
-main {
-  height: 1000px;
-  background-color: #c0cae4;
-}
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +11,7 @@ html {
   padding: 0;
 }
 body {
-  font-family: "Rubik", "Frank Ruhl Libre", sans-serif;
+  font-family: $font-title, $font-content, sans-serif;
   color: $text-color;
   font-size: 15px;
   line-height: 27px;
@@ -75,15 +71,6 @@ label {
   @include transition();
 }
 
-.header-bg {
-  background-image: url("../images/home/home-slider-01.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  z-index: -2;
-  height: 700px;
-  top: -70px;
-}
 .fixed-menu {
   position: fixed;
   top: 0px;
@@ -96,6 +83,66 @@ label {
     img#logo-green {
       display: none;
     }
+  }
+}
+
+// style for slide header
+.header-slide {
+  height: 700px;
+  top: -70px;
+  .slick-dots li button:before {
+    content: "";
+  }
+  .slick-dots {
+    bottom: 0px;
+  }
+  .slick-dots li {
+    width: 90px;
+  }
+  .slick-dots li.slick-active button {
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+  }
+  .slick-dots li button {
+    background-color: #ffffff40;
+    height: 2px;
+    width: 100%;
+    padding: 0;
+  }
+  li.slick-active {
+    background-color: #fff;
+    height: 1px;
+  }
+  &__item {
+    position: relative;
+    text-align: center;
+    video {
+      object-fit: cover;
+      background-size: cover;
+    }
+  }
+  &__desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      font-size: 52px;
+      color: #fff;
+      line-height: 52px;
+      font-family: $font-title, sans-serif;
+    }
+    h3 {
+      font-size: 12px;
+      color: #fff;
+      line-height: 16px;
+      font-family: $font-content, sans-serif;
+    }
+  }
+  img {
+    height: 700px;
+    width: 100%;
   }
 }
 
@@ -181,7 +228,58 @@ button.applyBtn {
 #show-menu-mobile {
   color: #fff;
 }
-// style for footer
+
+// style main -------------------------------------------->
+// book-room ---------------------------------------------->
+.book-room {
+  background-color: #f7f9fa;
+  text-align: center;
+  margin-top: -70px;
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 32px;
+    font-family: $font-title;
+  }
+  p {
+    font-size: 14px;
+    font-family: $font-content;
+  }
+  button {
+    @include button();
+  }
+  &__padding {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+  }
+}
+// room, show list room ---------------------------------->
+.room {
+  text-align: center;
+}
+// style for footer -------------------------------------->
+// back to top
+#to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  background: $main-color;
+  font-weight: bold;
+  color: #ffffff;
+  size: 30px;
+  display: none;
+  font-family: "Font Awesome 5 Pro";
+  &::after {
+    content: "\f077";
+  }
+  &:hover::after {
+    content: "\f325";
+  }
+}
 footer {
   background-color: #000;
 }
@@ -268,4 +366,40 @@ footer {
       color: #868b98;
     }
   }
+}
+
+// keyframes ------------------------------------>
+@-webkit-keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    transform: scale3d(0, 0, 0);
+  }
+  60% {
+    opacity: 0.6;
+    transform: scale3d(1, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    transform: scale3d(0, 0, 0);
+  }
+  60% {
+    opacity: 0.6;
+    transform: scale3d(1, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.slick-active .slide-content {
+  animation-name: fadeInUpSD;
+  animation-duration: 2s;
 }

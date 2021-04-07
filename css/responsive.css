@@ -16,7 +16,10 @@
   .footer-social__logoSocial {
     display: flex;
     align-items: center;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+
+  .book-room h1 {
+    font-size: 70px; } }
 @media (min-width: 1200px) {
   #main-menu {
     padding-bottom: 0; }

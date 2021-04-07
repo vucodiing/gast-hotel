@@ -110,7 +110,6 @@
           <button>CHECK AVAILABILITY</button>
         </div>
       </div>
-
       <div class="header-fixed">
         <div class="container">
           <div class="header">
@@ -245,14 +244,72 @@
           </div>
         </div>
       </div>
-      <div class="header-bg"></div>
+      <div class="header-slide">
+        <div class="header-slide__item">
+          <video autoplay loop preload muted width="100%" height="700px">
+            <source src="../images/home/video-demo.mp4" type="video/mp4" />
+          </video>
+          <div class="header-slide__desc">
+            <h1 class="slide-content">Your home</h1>
+            <h1 class="slide-content">in San Francisco</h1>
+            <h3 class="slide-content">
+              From entering in, until leaving, Gast is your home, not just a
+              hotel
+            </h3>
+          </div>
+        </div>
+        <div class="header-slide__item">
+          <img src="./images/home/home-slider-02.jpg" alt="banner slide" />
+          <div class="header-slide__desc">
+            <h1 class="slide-content">Your home</h1>
+            <h1 class="slide-content">in San Francisco</h1>
+            <h3 class="slide-content">
+              From entering in, until leaving, Gast is your home, not just a
+              hotel
+            </h3>
+          </div>
+        </div>
+        <div class="header-slide__item">
+          <img src="./images/home/home-slider-01.jpg" alt="banner slide" />
+          <div class="header-slide__desc">
+            <h1 class="slide-content">Your home</h1>
+            <h1 class="slide-content">in San Francisco</h1>
+            <h3 class="slide-content">
+              From entering in, until leaving, Gast is your home, not just a
+              hotel
+            </h3>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-      <!-- Main in here -->
+      <section class="book-room">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 book-room__padding">
+              <img src="./images/home/home-01.jpg" alt="home page" />
+            </div>
+            <div class="col-12 col-lg-6 book-room__padding">
+              <div class="book-room__center">
+                <h1>Fully experience living in San Francisco</h1>
+                <p>
+                  San Francisco has hills with views, the coast, excellent food
+                  and has been voted the happiest, healthiest and fittest city
+                  in the States many times.
+                </p>
+                <button>BOOK A ROOM</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="room"></section>
     </main>
 
     <footer>
+      <div id="to-top" title="back to top"></div>
       <div class="footer-social">
         <div class="container">
           <div class="row">
@@ -344,6 +401,7 @@
     <script src="./plugins/fontawesome/all.js"></script>
 
     <!-- Main JS -->
+    <script src="./js/slide.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

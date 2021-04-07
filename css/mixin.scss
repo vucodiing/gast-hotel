@@ -1,6 +1,8 @@
 $main-color: #0b3d24;
 $second-color: #000;
 $text-color: #474b56;
+$font-title: "Frank Ruhl Libre";
+$font-content: "Rubik";
 
 @mixin flex-column {
   display: flex;
@@ -50,6 +52,7 @@ $text-color: #474b56;
   transition: 0.3s ease-in-out;
   font-size: 16px;
   line-height: 20px;
+  font-family: $font-content;
   &:hover {
     background-color: $second-color;
   }

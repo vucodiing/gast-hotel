@@ -35,6 +35,7 @@ $(function () {
     if ($("#main-menu").css("left") == "-2000px") {
       $("#main-menu").css("left", "0px");
       $("#show-menu-mobile").css("color", "#000");
+      $(".header-fixed").css("background-color", "#fff");
     } else {
       $("#main-menu").css("left", "-2000px");
       $("#show-menu-mobile").css("color", "#fff");
@@ -42,7 +43,18 @@ $(function () {
   });
 });
 
-// for another ---------------------------------------------------------->
+// back to top
+$(function () {
+  $("#to-top").on("click", function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      200
+    );
+  });
+});
+
 // validate ---------------------------------------------------------->
 // validate email in footer
 $("#validate").validate({
@@ -77,6 +89,11 @@ var lastScrollTop = 0;
 $(document).ready(function () {
   $(window).scroll(function (event) {
     let pos_body = $("html,body").scrollTop();
+    if (pos_body > 50) {
+      $("#to-top").css("display", "block");
+    } else {
+      $("#to-top").css("display", "none");
+    }
 
     var st = $(this).scrollTop();
     if (st > lastScrollTop || st == lastScrollTop) {
