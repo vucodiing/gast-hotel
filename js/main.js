@@ -56,14 +56,14 @@ $(function () {
 });
 
 // responsive with jquery for p in room list
-$(window).resize(function () {
-  let width = $(window).width();
-  if (width < 415) {
-    $(".rooms__list-booking p.responsive").addClass("over-text");
-  } else {
-    $(".rooms__list-booking p.responsive").removeClass("over-text");
-  }
-});
+// $(window).resize(function () {
+//   let width = $(window).width();
+//   if (width < 415) {
+//     $(".rooms__list-booking p.responsive").addClass("over-text");
+//   } else {
+//     $(".rooms__list-booking p.responsive").removeClass("over-text");
+//   }
+// });
 
 // validate ---------------------------------------------------------->
 // validate email in footer
@@ -111,8 +111,8 @@ $(document).ready(function () {
     } else {
       if (pos_body > 50) {
         $(".header-fixed").addClass("fixed-menu");
-        $(".header-fixed").css("background-color", "#fff");
         $("#main-menu  a").css("color", "#000");
+        $(".header-fixed").css("background-color", "#fff");
         $("#logo-green").css("display", "block");
         $("#logo-white").css("display", "none");
         $("#show-menu-mobile").css("color", "#000");
@@ -127,18 +127,18 @@ $(document).ready(function () {
     }
     lastScrollTop = st;
   });
-  $(".header-fixed").hover(
-    function () {
-      $(".header-fixed").css("background-color", "#fff");
-      $("#main-menu  a").css("color", "#000");
-      $("#logo-green").css("display", "block");
-      $("#logo-white").css("display", "none");
-    },
-    function () {
-      $(".header-fixed").css("background-color", "transparent");
-      $("#main-menu  a").css("color", "#fff");
-      $("#logo-green").css("display", "none");
-      $("#logo-white").css("display", "block");
-    }
-  );
 });
+$(".header-fixed").hover(
+  function () {
+    $(".header-fixed").css("background-color", "#fff");
+    $("#main-menu  a").css("color", "#000");
+    $("#logo-green").css("display", "block");
+    $("#logo-white").css("display", "none");
+  },
+  function () {
+    $(".header-fixed").css("background-color", "transparent");
+    $("#main-menu  a").css("color", "#fff");
+    $("#logo-green").css("display", "none");
+    $("#logo-white").css("display", "block");
+  }
+);

@@ -60,10 +60,16 @@ label {
   margin-bottom: 0;
   cursor: pointer; }
 
+.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0; }
+
 .header-fixed {
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out; }
+  transition: 0.3s ease-in-out;
+  position: relative;
+  z-index: 1; }
 
 .fixed-menu {
   position: fixed;
@@ -236,7 +242,7 @@ button.applyBtn {
 
 .rooms {
   text-align: center;
-  padding-top: 50px; }
+  padding: 50px 0 50px; }
   .rooms h1 {
     font-size: 36px;
     font-family: "Frank Ruhl Libre"; }
@@ -251,8 +257,7 @@ button.applyBtn {
   .rooms p {
     font-size: 12px;
     font-family: "Rubik";
-    text-transform: uppercase;
-    padding: 10px 0px 40px; }
+    text-transform: uppercase; }
   .rooms__list-item {
     position: relative;
     background-position: center center;
@@ -306,7 +311,7 @@ button.applyBtn {
     transition: 0.3s ease-in-out; }
   .rooms__list-booking-center {
     height: 100%;
-    width: 85%;
+    width: 92%;
     transform: translateX(-100%);
     top: 0;
     left: 0;
@@ -316,18 +321,18 @@ button.applyBtn {
     justify-content: center; }
   .rooms__list-booking {
     text-align: left;
-    padding: 15px; }
+    padding: 5px; }
     .rooms__list-booking a {
       color: #474b56; }
     .rooms__list-booking h1 {
-      font-size: 26px; }
+      font-size: 22px; }
     .rooms__list-booking h3 {
-      font-size: 15px;
+      font-size: 14px;
       color: #0b3d24; }
     .rooms__list-booking p {
       font-size: 14px;
       text-transform: unset;
-      padding-bottom: 10px; }
+      padding-bottom: 0px; }
     .rooms__list-booking button {
       color: #fff;
       padding: 10px;
@@ -356,13 +361,15 @@ button.applyBtn {
     bottom: 0;
     left: 0;
     background-color: #fff;
-    padding: 10px 30px; }
+    padding: 5px 30px; }
 
 .over-text {
-  white-space: nowrap;
   width: 250px;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
 
 #to-top {
   position: fixed;

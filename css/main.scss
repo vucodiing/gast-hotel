@@ -66,9 +66,16 @@ label {
   cursor: pointer;
 }
 
+.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 // style for header
 .header-fixed {
   @include transition();
+  position: relative;
+  z-index: 1;
 }
 
 .fixed-menu {
@@ -258,7 +265,7 @@ button.applyBtn {
 // room, show list room ---------------------------------->
 .rooms {
   text-align: center;
-  padding-top: 50px;
+  padding: 50px 0 50px;
   h1 {
     font-size: 36px;
     font-family: $font-title;
@@ -276,7 +283,6 @@ button.applyBtn {
     font-size: 12px;
     font-family: $font-content;
     text-transform: uppercase;
-    padding: 10px 0px 40px;
   }
 
   // rooms list
@@ -338,7 +344,7 @@ button.applyBtn {
   }
   &__list-booking-center {
     height: 100%;
-    width: 85%;
+    width: 92%;
     transform: translateX(-100%);
     top: 0;
     left: 0;
@@ -347,22 +353,22 @@ button.applyBtn {
   }
   &__list-booking {
     text-align: left;
-    padding: 15px;
+    padding: 5px;
 
     a {
       color: $text-color;
     }
     h1 {
-      font-size: 26px;
+      font-size: 22px;
     }
     h3 {
-      font-size: 15px;
+      font-size: 14px;
       color: $main-color;
     }
     p {
       font-size: 14px;
       text-transform: unset;
-      padding-bottom: 10px;
+      padding-bottom: 0px;
     }
     button {
       @include button();
@@ -385,14 +391,16 @@ button.applyBtn {
     bottom: 0;
     left: 0;
     background-color: #fff;
-    padding: 10px 30px;
+    padding: 5px 30px;
   }
 }
 .over-text {
-  white-space: nowrap;
   width: 250px;
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 // style for footer -------------------------------------->
 // back to top
