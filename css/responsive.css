@@ -1,3 +1,6 @@
+@media (min-width: 414px) {
+  .rooms__list-booking {
+    padding: 30px; } }
 @media (min-width: 720px) {
   .header-booking__group .header-booking__item {
     width: 20%; }
@@ -19,7 +22,15 @@
     justify-content: space-between; }
 
   .book-room h1 {
-    font-size: 70px; } }
+    font-size: 70px; }
+
+  .rooms__list-item {
+    width: 50%;
+    float: left; } }
+@media (min-width: 1024px) {
+  .rooms__list-item {
+    width: 33.333333%;
+    float: left; } }
 @media (min-width: 1200px) {
   #main-menu {
     padding-bottom: 0; }

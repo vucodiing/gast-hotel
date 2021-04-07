@@ -256,8 +256,143 @@ button.applyBtn {
   }
 }
 // room, show list room ---------------------------------->
-.room {
+.rooms {
   text-align: center;
+  padding-top: 50px;
+  h1 {
+    font-size: 36px;
+    font-family: $font-title;
+  }
+  &__line {
+    width: 100%;
+    @include flex-center-horizon();
+  }
+  &__line-center {
+    background-color: $main-color;
+    height: 1px;
+    width: 50px;
+  }
+  p {
+    font-size: 12px;
+    font-family: $font-content;
+    text-transform: uppercase;
+    padding: 10px 0px 40px;
+  }
+
+  // rooms list
+  &__list-item {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    object-fit: cover;
+    img {
+      width: 100%;
+      @include transition();
+    }
+    &:hover .rooms__list-booking-center {
+      transform: translateX(0);
+    }
+    &:hover .rooms__list-name {
+      transform: translateY(100%);
+    }
+    &:hover img {
+      transform: scale(1.1);
+    }
+    img.image-hide {
+      opacity: 0;
+    }
+  }
+  &__list-find {
+    position: absolute;
+    @include flex-center();
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    a {
+      font-size: 16px;
+      color: $main-color;
+      &::after {
+        padding-left: 7px;
+        content: "\f35a";
+        font-family: "Font Awesome 5 Pro";
+        opacity: 0;
+        @include transition();
+        font-size: 20px;
+        margin-top: 5px;
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+  &__list-find-content {
+    padding: 20px;
+  }
+  &__list-booking-center,
+  &__list-name {
+    position: absolute;
+    @include transition();
+  }
+  &__list-booking-center {
+    height: 100%;
+    width: 85%;
+    transform: translateX(-100%);
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    @include flex-center();
+  }
+  &__list-booking {
+    text-align: left;
+    padding: 15px;
+
+    a {
+      color: $text-color;
+    }
+    h1 {
+      font-size: 26px;
+    }
+    h3 {
+      font-size: 15px;
+      color: $main-color;
+    }
+    p {
+      font-size: 14px;
+      text-transform: unset;
+      padding-bottom: 10px;
+    }
+    button {
+      @include button();
+      width: 100%;
+      margin-top: 15px;
+    }
+    span {
+      font-family: $font-content;
+    }
+  }
+  &__list-price {
+    @include flex-center-vertical();
+    justify-content: space-between;
+  }
+  .checked {
+    color: orange;
+  }
+  &__list-name {
+    font-family: $font-content;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 30px;
+  }
+}
+.over-text {
+  white-space: nowrap;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 // style for footer -------------------------------------->
 // back to top

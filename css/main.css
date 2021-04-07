@@ -234,8 +234,135 @@ button.applyBtn {
     display: flex;
     align-items: center; }
 
-.room {
-  text-align: center; }
+.rooms {
+  text-align: center;
+  padding-top: 50px; }
+  .rooms h1 {
+    font-size: 36px;
+    font-family: "Frank Ruhl Libre"; }
+  .rooms__line {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .rooms__line-center {
+    background-color: #0b3d24;
+    height: 1px;
+    width: 50px; }
+  .rooms p {
+    font-size: 12px;
+    font-family: "Rubik";
+    text-transform: uppercase;
+    padding: 10px 0px 40px; }
+  .rooms__list-item {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    object-fit: cover; }
+    .rooms__list-item img {
+      width: 100%;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+    .rooms__list-item:hover .rooms__list-booking-center {
+      transform: translateX(0); }
+    .rooms__list-item:hover .rooms__list-name {
+      transform: translateY(100%); }
+    .rooms__list-item:hover img {
+      transform: scale(1.1); }
+    .rooms__list-item img.image-hide {
+      opacity: 0; }
+  .rooms__list-find {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff; }
+    .rooms__list-find a {
+      font-size: 16px;
+      color: #0b3d24; }
+      .rooms__list-find a::after {
+        padding-left: 7px;
+        content: "\f35a";
+        font-family: "Font Awesome 5 Pro";
+        opacity: 0;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        font-size: 20px;
+        margin-top: 5px; }
+      .rooms__list-find a:hover::after {
+        opacity: 1; }
+  .rooms__list-find-content {
+    padding: 20px; }
+  .rooms__list-booking-center, .rooms__list-name {
+    position: absolute;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .rooms__list-booking-center {
+    height: 100%;
+    width: 85%;
+    transform: translateX(-100%);
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .rooms__list-booking {
+    text-align: left;
+    padding: 15px; }
+    .rooms__list-booking a {
+      color: #474b56; }
+    .rooms__list-booking h1 {
+      font-size: 26px; }
+    .rooms__list-booking h3 {
+      font-size: 15px;
+      color: #0b3d24; }
+    .rooms__list-booking p {
+      font-size: 14px;
+      text-transform: unset;
+      padding-bottom: 10px; }
+    .rooms__list-booking button {
+      color: #fff;
+      padding: 10px;
+      border: none;
+      background-color: #0b3d24;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: "Rubik";
+      width: 100%;
+      margin-top: 15px; }
+      .rooms__list-booking button:hover {
+        background-color: #000; }
+    .rooms__list-booking span {
+      font-family: "Rubik"; }
+  .rooms__list-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .rooms .checked {
+    color: orange; }
+  .rooms__list-name {
+    font-family: "Rubik";
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 30px; }
+
+.over-text {
+  white-space: nowrap;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 #to-top {
   position: fixed;
