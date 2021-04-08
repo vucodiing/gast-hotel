@@ -55,15 +55,24 @@ $(function () {
   });
 });
 
-// responsive with jquery for p in room list
-// $(window).resize(function () {
-//   let width = $(window).width();
-//   if (width < 415) {
-//     $(".rooms__list-booking p.responsive").addClass("over-text");
-//   } else {
-//     $(".rooms__list-booking p.responsive").removeClass("over-text");
-//   }
-// });
+// responsive when change display
+
+$(window).resize(function () {
+  let width = $(window).width();
+  // for guest
+  if (width > 1023) {
+    $(".guest__block").addClass("guest-position");
+  } else {
+    $(".guest__block").removeClass("guest-position");
+  }
+
+  // for event
+  if (width < 414) {
+    $(".event-responsive").addClass("event-text");
+  } else {
+    $("p.event").removeClass("event-text");
+  }
+});
 
 // validate ---------------------------------------------------------->
 // validate email in footer

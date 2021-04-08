@@ -402,6 +402,340 @@ button.applyBtn {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
+
+// restaurant -------------------------------------------->
+.restaurant {
+  text-align: center;
+  padding: 50px 0 50px;
+  &__title {
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 36px;
+    font-family: $font-title;
+  }
+  &__line {
+    width: 100%;
+    @include flex-center-horizon();
+  }
+  &__line-center {
+    background-color: $main-color;
+    height: 1px;
+    width: 50px;
+  }
+  p {
+    font-size: 12px;
+    font-family: $font-content;
+    text-transform: uppercase;
+  }
+  &__item {
+    padding: 20px 0;
+  }
+  &__item-block {
+    svg {
+      font-size: 110px;
+    }
+    h1 {
+      font-size: 28px;
+      font-family: $font-title;
+    }
+    p {
+      font-size: 14px;
+      font-family: $font-content;
+      text-transform: unset;
+    }
+    a {
+      color: $main-color;
+      &::after {
+        padding-left: 7px;
+        content: "\f35a";
+        font-family: "Font Awesome 5 Pro";
+        opacity: 0;
+        @include transition();
+        font-size: 20px;
+        margin-top: 5px;
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+    }
+  }
+  &__item-image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// experience -------------------------------------------->
+.experience {
+  position: relative;
+  .parallax {
+    background-image: url("../images/home/home-17.jpeg");
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__title {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  &__block {
+    text-align: center;
+    h1,
+    svg {
+      color: #fff;
+      font-size: 60px;
+    }
+  }
+}
+
+// guest book -------------------------------------------->
+.guest {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f7f9fa;
+  &__title {
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 36px;
+    font-family: $font-title;
+  }
+  &__line {
+    width: 100%;
+    @include flex-center-horizon();
+  }
+  &__line-center {
+    background-color: $main-color;
+    height: 1px;
+    width: 50px;
+  }
+  p {
+    font-size: 12px;
+    font-family: $font-content;
+    text-transform: uppercase;
+  }
+  &__item {
+    img {
+      width: 100%;
+    }
+    h1 {
+      padding-top: 20px;
+      font-size: 26px;
+    }
+    span {
+      font-size: 14px;
+      color: #8d929d;
+      font-family: $font-content;
+    }
+    p {
+      font-size: 14px;
+      text-transform: unset;
+    }
+  }
+  &__block {
+    // position: absolute;
+    background-color: #fff;
+    padding: 15px;
+  }
+}
+// change position when display 1024px
+.guest-position {
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: #2326331a 0px 10px 40px 0px;
+}
+
+// event ------------------------------------------------->
+.event {
+  text-align: center;
+  background-color: #000;
+  padding: 50px 0;
+  &__container {
+    max-width: 830px;
+    margin: auto;
+  }
+  &__title {
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 26px;
+    font-family: $font-title;
+    color: #fff;
+  }
+  &__line {
+    width: 100%;
+    @include flex-center-horizon();
+  }
+  &__line-center {
+    background-color: #fff;
+    height: 1px;
+    width: 50px;
+  }
+  p {
+    font-size: 14px;
+    font-family: $font-content;
+    color: #8d929d;
+    text-align: start;
+  }
+  &__small {
+    position: relative;
+    overflow: hidden;
+    &:hover img {
+      transform: scale(1.1);
+    }
+    img {
+      width: 100%;
+      @include transition();
+    }
+  }
+  &__large {
+    padding: 15px;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  &__date {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+    text-align: center;
+    width: 70px;
+    height: 85px;
+    padding: 15px;
+    color: #000;
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      -webkit-clip-path: polygon(70px 0, 70px 65px, 35px 75px, 0 65px, 0 0);
+      clip-path: polygon(70px 0, 70px 65px, 35px 75px, 0 65px, 0 0);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 1;
+    }
+    p {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 0;
+      color: $main-color;
+      text-align: center;
+    }
+  }
+  &__line-event {
+    background-color: #393b3f;
+    height: 1px;
+    width: 100%;
+    margin: 30px 0;
+  }
+  button {
+    @include button-subscribe();
+    font-family: $font-content;
+  }
+}
+.event-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+// articles ---------------------------------------------->
+.articles {
+  text-align: center;
+  &__title {
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 26px;
+    font-family: $font-title;
+    color: #000;
+  }
+  &__line {
+    width: 100%;
+    @include flex-center-horizon();
+  }
+  &__line-center {
+    background-color: #000;
+    height: 1px;
+    width: 50px;
+  }
+  p {
+    font-size: 14px;
+    font-family: $font-content;
+    color: #8d929d;
+  }
+  &__item {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    img {
+      width: 100%;
+      @include transition();
+    }
+    &:hover .articles__bg {
+      opacity: 1;
+    }
+    &:hover img {
+      transform: scale(1.05);
+    }
+    &:hover .articles__desc {
+      bottom: 0;
+    }
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1e66;
+    opacity: 0;
+    @include transition();
+  }
+  &__desc {
+    text-align: start;
+    position: absolute;
+    bottom: -56px;
+    @include transition();
+    width: 100%;
+    span {
+      font-size: 14px;
+      color: #fff;
+    }
+    h2 {
+      font-size: 20px;
+      color: #fff;
+      font-family: $font-title;
+    }
+    button {
+      width: 100%;
+      background-color: #fff;
+      height: 52px;
+      margin-top: 15px;
+      text-align: start;
+      border: none;
+      box-shadow: 0 1px 8px 1px #2326331f;
+    }
+  }
+  &__group {
+    padding: 20px;
+  }
+}
 // style for footer -------------------------------------->
 // back to top
 #to-top {
