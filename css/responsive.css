@@ -31,6 +31,10 @@
 
   .contact__input {
     width: 49%; } }
+@media (min-width: 1024px) {
+  .book-a-room img {
+    position: absolute;
+    top: 30px; } }
 @media (min-width: 1200px) {
   #main-menu {
     padding-bottom: 0; }

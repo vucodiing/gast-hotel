@@ -41,6 +41,12 @@
 }
 
 @media (min-width: 1024px) {
+  .book-a-room {
+    img {
+      position: absolute;
+      top: 30px;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
