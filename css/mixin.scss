@@ -44,7 +44,7 @@ $font-content: "Rubik";
 }
 
 @mixin link {
-  color: #000;
+  color: $text-color;
   &:hover {
     color: $main-color;
   }

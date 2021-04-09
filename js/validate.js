@@ -26,3 +26,20 @@ $("#home-contact").validate({
     },
   },
 });
+
+$("#news-detail").validate({
+  rules: {
+    name: "required",
+    email: {
+      required: true,
+      email: true,
+    },
+  },
+  messages: {
+    name: "Please enter Your name",
+    email: {
+      required: "Please enter Email",
+      email: "Email not true",
+    },
+  },
+});
