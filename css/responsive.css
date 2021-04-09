@@ -22,7 +22,11 @@
     justify-content: space-between; }
 
   .book-room h1 {
-    font-size: 70px; } }
+    font-size: 70px; }
+
+  .contact__group {
+    width: 50%;
+    float: left; } }
 @media (min-width: 1200px) {
   #main-menu {
     padding-bottom: 0; }

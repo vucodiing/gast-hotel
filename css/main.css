@@ -35,9 +35,11 @@ img:focus {
   outline: none; }
 
 input {
-  height: 46px;
-  border: 1px solid #8b8b8b4d;
-  width: 100%; }
+  height: 46px; }
+
+input,
+textarea {
+  border: 1px solid #8b8b8b4d; }
 
 select {
   -webkit-appearance: none;
@@ -49,7 +51,9 @@ input,
 textarea,
 select {
   text-indent: 10px;
+  font-family: "Rubik";
   font-size: 15px;
+  width: 100%;
   color: #474b56; }
   input::placeholder,
   textarea::placeholder,
@@ -582,7 +586,8 @@ button.applyBtn {
   -webkit-box-orient: vertical; }
 
 .articles {
-  text-align: center; }
+  text-align: center;
+  padding: 50px 0; }
   .articles__title {
     padding: 0 15px; }
   .articles h1 {
@@ -604,7 +609,8 @@ button.applyBtn {
   .articles__item {
     overflow: hidden;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    margin: 0 30px; }
     .articles__item img {
       width: 100%;
       -webkit-transition: 0.3s ease-in-out;
@@ -649,9 +655,69 @@ button.applyBtn {
       margin-top: 15px;
       text-align: start;
       border: none;
-      box-shadow: 0 1px 8px 1px #2326331f; }
+      box-shadow: 0 1px 8px 1px #2326331f;
+      padding-left: 7px;
+      color: #0b3d24;
+      font-weight: 500;
+      font-size: 16px; }
+      .articles__desc button::after {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f0a9";
+        padding-left: 7px; }
   .articles__group {
     padding: 20px; }
+  .articles button.all-articles {
+    color: #fff;
+    padding: 10px;
+    border: none;
+    background-color: #0b3d24;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Rubik";
+    margin-top: 40px; }
+    .articles button.all-articles:hover {
+      background-color: #000; }
+
+.contact__us {
+  padding-bottom: 20px; }
+.contact__us .contact__us-item:last-child {
+  padding: 0 15px; }
+.contact__us-item {
+  position: relative;
+  padding: 15px 0; }
+  .contact__us-item img {
+    width: 100%; }
+  .contact__us-item h1 {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .contact__us-item h2 {
+    font-size: 25px;
+    text-align: center; }
+  .contact__us-item button {
+    color: #fff;
+    padding: 10px;
+    border: none;
+    background-color: #0b3d24;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Rubik";
+    width: 100%; }
+    .contact__us-item button:hover {
+      background-color: #000; }
+.contact__input {
+  margin-bottom: 10px; }
+.contact__group {
+  width: 100%; }
 
 #to-top {
   position: fixed;

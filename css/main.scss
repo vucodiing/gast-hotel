@@ -41,8 +41,10 @@ img:focus {
 }
 input {
   height: 46px;
+}
+input,
+textarea {
   @include border-color();
-  width: 100%;
 }
 select {
   -webkit-appearance: none;
@@ -55,7 +57,9 @@ input,
 textarea,
 select {
   text-indent: 10px;
+  font-family: $font-content;
   font-size: 15px;
+  width: 100%;
   color: $text-color;
   &::placeholder {
     color: $text-color;
@@ -657,6 +661,7 @@ button.applyBtn {
 // articles ---------------------------------------------->
 .articles {
   text-align: center;
+  padding: 50px 0;
   &__title {
     padding: 0 15px;
   }
@@ -683,6 +688,7 @@ button.applyBtn {
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    margin: 0 30px;
     img {
       width: 100%;
       @include transition();
@@ -730,10 +736,62 @@ button.applyBtn {
       text-align: start;
       border: none;
       box-shadow: 0 1px 8px 1px #2326331f;
+      padding-left: 7px;
+      color: $main-color;
+      font-weight: 500;
+      font-size: 16px;
+      &::after {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f0a9";
+        padding-left: 7px;
+      }
     }
   }
   &__group {
     padding: 20px;
+  }
+  button.all-articles {
+    @include button();
+    margin-top: 40px;
+  }
+}
+
+// contact us -------------------------------------------->
+.contact {
+  &__us {
+    padding-bottom: 20px;
+  }
+  &__us .contact__us-item:last-child {
+    padding: 0 15px;
+  }
+  &__us-item {
+    position: relative;
+    padding: 15px 0;
+    img {
+      width: 100%;
+    }
+    h1 {
+      position: absolute;
+      font-size: 30px;
+      color: #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h2 {
+      font-size: 25px;
+      text-align: center;
+    }
+    button {
+      @include button();
+      width: 100%;
+    }
+  }
+  &__input {
+    margin-bottom: 10px;
+  }
+  &__group {
+    width: 100%;
   }
 }
 // style for footer -------------------------------------->
