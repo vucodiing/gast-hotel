@@ -32,8 +32,11 @@
     font-size: 70px;
   }
   .contact__group {
-    width: 50%;
-    float: left;
+    @include flex-center-vertical();
+    justify-content: space-between;
+  }
+  .contact__input {
+    width: 49%;
   }
 }
 

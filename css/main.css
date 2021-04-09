@@ -64,6 +64,11 @@ label {
   margin-bottom: 0;
   cursor: pointer; }
 
+label.error {
+  font-family: "Rubik";
+  font-size: 12px;
+  color: red; }
+
 .no-gutter > [class*="col-"] {
   padding-right: 0;
   padding-left: 0; }
@@ -684,7 +689,10 @@ button.applyBtn {
 .contact__us {
   padding-bottom: 20px; }
 .contact__us .contact__us-item:last-child {
-  padding: 0 15px; }
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 .contact__us-item {
   position: relative;
   padding: 15px 0; }
@@ -715,9 +723,44 @@ button.applyBtn {
     .contact__us-item button:hover {
       background-color: #000; }
 .contact__input {
-  margin-bottom: 10px; }
-.contact__group {
+  margin-bottom: 10px;
   width: 100%; }
+.contact__group textarea {
+  margin-bottom: 15px;
+  height: 75px; }
+
+.book-a-room {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  height: 450px; }
+  .book-a-room img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .book-a-room .bookARoom {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .book-a-room .bookARoom h1 {
+      color: #fff;
+      font-size: 30px; }
+    .book-a-room .bookARoom button {
+      color: #fff;
+      padding: 10px;
+      border: none;
+      background-color: #0b3d24;
+      -webkit-transition: 0.3s ease-in-out;
+      -moz-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: "Rubik"; }
+      .book-a-room .bookARoom button:hover {
+        background-color: #000; }
 
 #to-top {
   position: fixed;

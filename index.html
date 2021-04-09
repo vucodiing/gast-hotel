@@ -898,58 +898,68 @@
               </div>
 
               <div class="col-12 col-lg-6 contact__us-item">
-                <h2>
-                  Send us a message and we’ll contact you as soon as possible
-                </h2>
-                <form action="">
-                  <div class="contact__group">
-                    <div class="contact__input">
-                      <input
-                        type="text"
-                        name="home-name"
-                        placeholder="Name"
-                        required
-                      />
+                <div class="contact__us-center">
+                  <h2>
+                    Send us a message and we’ll contact you as soon as possible
+                  </h2>
+                  <form action="" id="home-contact">
+                    <div class="contact__group">
+                      <div class="contact__input">
+                        <input
+                          type="text"
+                          name="homeName"
+                          placeholder="Name"
+                          required
+                        />
+                      </div>
+                      <div class="contact__input">
+                        <input
+                          type="text"
+                          name="homeCompany"
+                          placeholder="Company"
+                          required
+                        />
+                      </div>
                     </div>
-                    <div class="contact__input">
-                      <input
-                        type="text"
-                        name="home-company"
-                        placeholder="Company"
-                        required
-                      />
-                    </div>
-                  </div>
 
-                  <div class="contact__group">
-                    <div class="contact__input">
-                      <input
-                        type="text"
-                        name="home-email"
-                        placeholder="Email"
-                        required
-                      />
+                    <div class="contact__group">
+                      <div class="contact__input">
+                        <input
+                          type="text"
+                          name="homeEmail"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                      <div class="contact__input">
+                        <input
+                          type="text"
+                          name="homePhone"
+                          placeholder="Phone"
+                          required
+                        />
+                      </div>
                     </div>
-                    <div class="contact__input">
-                      <input
-                        type="text"
-                        name="home-phone"
-                        placeholder="Phone"
-                        required
-                      />
-                    </div>
-                  </div>
 
-                  <div class="contact__group">
-                    <textarea
-                      placeholder="Your message up to 500 characters..."
-                    ></textarea>
-                  </div>
-                  <button>SEND MESSAGE</button>
-                </form>
+                    <div class="contact__group">
+                      <textarea
+                        placeholder="Your message up to 500 characters..."
+                      ></textarea>
+                    </div>
+                    <button>SEND MESSAGE</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="book-a-room">
+        <img src="./images/home/home-12.jpg" alt="book a room" />
+        <div class="bookARoom">
+          <h1>Enjoy San Francisco as a local!</h1>
+          <a href="rooms-list.html"><button>BOOK A ROOM</button></a>
         </div>
       </section>
     </main>
@@ -1047,6 +1057,7 @@
     <script src="./plugins/fontawesome/all.js"></script>
 
     <!-- Main JS -->
+    <script src="./js/validate.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/main.js"></script>
   </body>

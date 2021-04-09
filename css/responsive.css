@@ -25,8 +25,12 @@
     font-size: 70px; }
 
   .contact__group {
-    width: 50%;
-    float: left; } }
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+  .contact__input {
+    width: 49%; } }
 @media (min-width: 1200px) {
   #main-menu {
     padding-bottom: 0; }

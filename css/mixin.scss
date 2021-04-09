@@ -36,6 +36,13 @@ $font-content: "Rubik";
   background-position: center;
 }
 
+@mixin center-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin link {
   color: #000;
   &:hover {
