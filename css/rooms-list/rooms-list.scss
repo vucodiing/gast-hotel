@@ -1,0 +1,51 @@
+@import "../mixin.scss";
+
+ul.slick-dots {
+  display: none;
+}
+
+.service {
+  // for title ---------------------->
+  &__title {
+    margin-bottom: 70px;
+    text-align: center;
+    position: relative;
+    h1 {
+      font-size: 36px;
+      line-height: 46px;
+    }
+    p {
+      font-size: 12px;
+      font-family: $font-content;
+    }
+  }
+  &__line {
+    @include center-block();
+    margin: 10px 0;
+    height: 1px;
+    width: 100px;
+    background-color: #d7dadd;
+  }
+
+  // for content ---------------------->
+  &__hook {
+    background-image: url(/images/room/room-01.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+  }
+  &__block {
+    background-color: #fff;
+  }
+  &__block-center {
+    padding: 20px;
+  }
+  &__block-title {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  &__block-desc {
+    font-family: $font-content;
+  }
+}

@@ -1,0 +1,39 @@
+ul.slick-dots {
+  display: none; }
+
+.service__title {
+  margin-bottom: 70px;
+  text-align: center;
+  position: relative; }
+  .service__title h1 {
+    font-size: 36px;
+    line-height: 46px; }
+  .service__title p {
+    font-size: 12px;
+    font-family: "Rubik"; }
+.service__line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 10px 0;
+  height: 1px;
+  width: 100px;
+  background-color: #d7dadd; }
+.service__hook {
+  background-image: url(/images/room/room-01.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 30px; }
+.service__block {
+  background-color: #fff; }
+.service__block-center {
+  padding: 20px; }
+.service__block-title {
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 15px; }
+.service__block-desc {
+  font-family: "Rubik"; }
+
+/*# sourceMappingURL=rooms-list.css.map */
