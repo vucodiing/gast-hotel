@@ -20,11 +20,14 @@ ul.slick-dots {
   height: 1px;
   width: 100px;
   background-color: #d7dadd; }
-.service__hook {
-  background-image: url(/images/room/room-01.jpg);
+.service__hook-01, .service__hook-02 {
   background-position: center center;
   background-size: cover;
   padding: 30px; }
+.service__hook-01 {
+  background-image: url(/images/room/room-01.jpg); }
+.service__hook-02 {
+  background-image: url(/images/room/room-02.jpg); }
 .service__block {
   background-color: #fff; }
 .service__block-center {
@@ -35,5 +38,57 @@ ul.slick-dots {
   padding-bottom: 15px; }
 .service__block-desc {
   font-family: "Rubik"; }
+  .service__block-desc ul {
+    list-style: inside; }
+.service__icon {
+  padding: 60px 0 45px; }
+.service__icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #0b3d24; }
+  .service__icon-item svg {
+    font-size: 36px; }
+.service__reserve {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  text-align: center; }
+.service__reserve-title {
+  font-size: 36px;
+  line-height: 46px;
+  color: #0b3d24; }
+.service__reserve-block {
+  display: flex;
+  justify-content: center; }
+.service__reserve-line {
+  height: 1px;
+  width: 100px;
+  background-color: #0b3d24; }
+.service .header-booking {
+  margin: 40px 0; }
+
+.parallax {
+  /* The image used */
+  background-image: url("/images/room/room-07.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.rooms-banner__group {
+  position: relative;
+  top: -70px; }
+.rooms-banner__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center; }
+  .rooms-banner__title p {
+    font-family: "Rubik"; }
 
 /*# sourceMappingURL=rooms-list.css.map */

@@ -47,6 +47,14 @@
       top: 30px;
     }
   }
+  .service__block {
+    @include center-block();
+    position: relative;
+  }
+  .service__hook-01,
+  .service__hook-02 {
+    height: 450px;
+  }
 }
 
 @media (min-width: 1200px) {
