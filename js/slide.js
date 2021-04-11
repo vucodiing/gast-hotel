@@ -50,3 +50,23 @@ $(".articles-slide").slick({
     },
   ],
 });
+
+$(".rooms-slide").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: false,
+  dots: true,
+  autoplaySpeed: 3000,
+});
+
+$(".offers-slide").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: false,
+  dots: false,
+  autoplaySpeed: 3000,
+});

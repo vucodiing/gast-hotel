@@ -5,6 +5,12 @@
     padding: 10px;
   }
 }
+
+@media (min-width: 425px) {
+  .offers-slide {
+    padding: 30px 20px;
+  }
+}
 @media (min-width: 720px) {
   .header-booking__group {
     .header-booking__item {
@@ -13,6 +19,9 @@
   }
   .header-booking__item {
     width: 20%;
+  }
+  .offers-slide {
+    padding: 30px;
   }
 }
 @media (min-width: 768px) {
@@ -38,6 +47,24 @@
   .contact__input {
     width: 49%;
   }
+  .rooms-view h1,
+  .spa h1 {
+    padding-top: 0;
+  }
+  .spa-order {
+    order: 2;
+  }
+  .offers-slide h1 {
+    font-size: 24px;
+  }
+  .offers-slide span {
+    font-size: 12px;
+  }
+  .offers-slide p,
+  .offers-slide ul li {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -54,6 +81,15 @@
   .service__hook-01,
   .service__hook-02 {
     height: 450px;
+  }
+  .rooms-detail__block-item {
+    position: absolute;
+  }
+  .offers-slide__desc {
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
