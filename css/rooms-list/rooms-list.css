@@ -54,8 +54,10 @@ ul.slick-dots {
     font-size: 36px; }
 .service__reserve {
   background-color: #f7f7f7;
-  padding: 60px 0;
+  padding: 60px 15px;
   text-align: center; }
+  .service__reserve .header-booking {
+    height: 145px; }
 .service__reserve-title {
   font-size: 36px;
   line-height: 46px;
@@ -69,6 +71,12 @@ ul.slick-dots {
   background-color: #0b3d24; }
 .service .header-booking {
   margin: 40px 0; }
+
+.header-booking__item span::after {
+  top: -4px; }
+
+.header-booking__select::after {
+  top: 10px; }
 
 .parallax {
   /* The image used */

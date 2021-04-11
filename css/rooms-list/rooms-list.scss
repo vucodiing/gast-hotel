@@ -74,8 +74,11 @@ ul.slick-dots {
   // for reserve ---------------------->
   &__reserve {
     background-color: #f7f7f7;
-    padding: 60px 0;
+    padding: 60px 15px;
     text-align: center;
+    .header-booking {
+      height: 145px;
+    }
   }
   &__reserve-title {
     font-size: 36px;
@@ -94,7 +97,12 @@ ul.slick-dots {
     margin: 40px 0;
   }
 }
-
+.header-booking__item span::after {
+  top: -4px;
+}
+.header-booking__select::after {
+  top: 10px;
+}
 // style for rooms details ------------------- >
 .parallax {
   /* The image used */

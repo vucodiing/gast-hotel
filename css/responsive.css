@@ -54,7 +54,10 @@
   .offers-slide p,
   .offers-slide ul li {
     font-size: 14px;
-    line-height: 20px; } }
+    line-height: 20px; }
+
+  .service__reserve .header-booking {
+    height: 46px; } }
 @media (min-width: 1024px) {
   .book-a-room img {
     position: absolute;
