@@ -70,3 +70,21 @@ $(".offers-slide").slick({
   dots: false,
   autoplaySpeed: 3000,
 });
+
+$(".meeting-slide").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: true,
+  dots: false,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+      },
+    },
+  ],
+});

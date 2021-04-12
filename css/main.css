@@ -69,9 +69,43 @@ label.error {
   font-size: 12px;
   color: red; }
 
-.no-gutter > [class*="col-"] {
+.no-gutter-padding > [class*="col-"] {
   padding-right: 0;
   padding-left: 0; }
+
+.no-margin {
+  margin-right: 0;
+  margin-left: 0; }
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  background-color: #0b3d24;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: #000; }
+
+.slick-prev {
+  left: 0px; }
+
+.slick-next {
+  right: 0px; }
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "Font Awesome 5 Pro";
+  font-size: 40px; }
+
+.slick-prev:before {
+  content: "\f053"; }
+
+.slick-next:before {
+  content: "\f054"; }
 
 .header-fixed {
   -webkit-transition: 0.3s ease-in-out;

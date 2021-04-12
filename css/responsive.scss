@@ -68,6 +68,13 @@
   .service__reserve .header-booking {
     height: 46px;
   }
+  .meeting-count__01,
+  .meeting-count__02 {
+    border-bottom-width: 0;
+  }
+  .meeting-count__02 {
+    border-right-width: 1px;
+  }
 }
 
 @media (min-width: 1024px) {

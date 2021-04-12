@@ -75,9 +75,43 @@ label.error {
   color: red;
 }
 
-.no-gutter > [class*="col-"] {
+.no-gutter-padding > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.no-margin {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+// style for slick slide
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  background-color: $main-color;
+  height: 50px;
+  width: 50px;
+  @include transition();
+  &:hover {
+    background-color: #000;
+  }
+}
+.slick-prev {
+  left: 0px;
+}
+.slick-next {
+  right: 0px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "Font Awesome 5 Pro";
+  font-size: 40px;
+}
+.slick-prev:before {
+  content: "\f053";
+}
+.slick-next:before {
+  content: "\f054";
 }
 
 // style for header
