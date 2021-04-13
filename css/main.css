@@ -69,7 +69,19 @@ label.error {
   font-size: 12px;
   color: red; }
 
-.no-gutter-padding > [class*="col-"] {
+::selection {
+  background: #0b3d24;
+  color: #fff; }
+
+::-moz-selection {
+  background: #0b3d24;
+  color: #fff; }
+
+::-webkit-selection {
+  background: #0b3d24;
+  color: #fff; }
+
+.no-gutter > [class*="col-"] {
   padding-right: 0;
   padding-left: 0; }
 
@@ -121,8 +133,10 @@ label.error {
   z-index: 1000;
   box-shadow: 2px 5px 5px #00000059; }
 
-.header__logo img#logo-green {
-  display: none; }
+.header__logo {
+  padding-left: 20px; }
+  .header__logo img#logo-green {
+    display: none; }
 
 .header-slide {
   height: 700px;
@@ -251,7 +265,8 @@ button.applyBtn {
   color: #fff; }
 
 #show-menu-mobile {
-  color: #fff; }
+  color: #fff;
+  padding-right: 20px; }
 
 .book-room {
   background-color: #f7f9fa;
@@ -697,6 +712,7 @@ button.applyBtn {
       box-shadow: 0 1px 8px 1px #2326331f;
       padding-left: 7px;
       color: #0b3d24;
+      font-family: "Quicksand";
       font-weight: 500;
       font-size: 16px; }
       .articles__desc button::after {

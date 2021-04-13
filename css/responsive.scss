@@ -114,8 +114,12 @@
 }
 
 @media (min-width: 1200px) {
+  .header__logo {
+    padding-left: 50px;
+  }
   #main-menu {
     padding-bottom: 0;
+    padding-right: 50px;
   }
   .sm-clean a .sub-arrow {
     background-color: transparent;

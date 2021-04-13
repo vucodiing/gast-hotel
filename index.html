@@ -111,112 +111,120 @@
         </div>
       </section>
       <section class="header-fixed">
-        <div class="container">
-          <div class="header">
-            <div class="header__logo">
-              <img
-                src="./images/logo-header.svg"
-                alt="logo web"
-                id="logo-green"
-              />
-              <img
-                src="./images/logo-footer.svg"
-                alt="logo web"
-                id="logo-white"
-              />
-            </div>
-            <div class="header__icon">
-              <!-- icon show on tablet and mobile, show on 1199px -->
-              <div
-                class="header__icon-mobile d-block d-xl-none"
-                id="show-menu-mobile"
-              >
-                <i class="far fa-bars"></i>
-              </div>
-            </div>
-
-            <!-- main menu -->
-            <ul id="main-menu" class="sm sm-clean">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="rooms-list.html">Rooms</a>
-              </li>
-              <li>
-                <a href="meeting-rooms.html">Meeting & Event</a>
-              </li>
-              <li>
-                <a href="gallery.html">Gallery</a>
-              </li>
-              <li>
-                <a href="news.html">News</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-              <li>
-                <a
-                  href="https://booking-guarantee.com/Home/SelectDate?hotelKey=IIT&lang=en&currency=USD"
-                  >Booking</a
-                >
-              </li>
-              <!-- header-booking show in tablet -->
-              <div
-                class="header-booking d-block d-xl-none header-booking__tablet"
-              >
-                <div class="header-booking__item">
-                  <span
-                    ><input
-                      type="text"
-                      autocomplete="off"
-                      name="checkIn"
-                      value=""
-                      id="current-date"
-                      placeholder="Check-in"
-                  /></span>
-                </div>
-                <div class="header-booking__item">
-                  <span
-                    ><input
-                      type="text"
-                      autocomplete="off"
-                      name="checkIn"
-                      value=""
-                      id="current-date"
-                      placeholder="Check-out"
-                  /></span>
-                </div>
-                <div class="header-booking__group">
-                  <div class="header-booking__item">
-                    <div class="header-booking__select">
-                      <select>
-                        <option value="0">Adults</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="header-booking__item">
-                    <div class="header-booking__select">
-                      <select>
-                        <option value="0">Children</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="header-booking__item">
-                  <button>CHECK AVAILABILITY</button>
-                </div>
-              </div>
-            </ul>
+        <div class="header">
+          <div class="header__logo">
+            <img
+              src="./images/logo-header.svg"
+              alt="logo web"
+              id="logo-green"
+            />
+            <img
+              src="./images/logo-footer.svg"
+              alt="logo web"
+              id="logo-white"
+            />
           </div>
+          <div class="header__icon">
+            <!-- icon show on tablet and mobile, show on 1199px -->
+            <div
+              class="header__icon-mobile d-block d-xl-none"
+              id="show-menu-mobile"
+            >
+              <i class="far fa-bars"></i>
+            </div>
+          </div>
+
+          <!-- main menu -->
+          <ul id="main-menu" class="sm sm-clean">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="rooms-list.html">Rooms</a>
+              <ul>
+                <li><a href="rooms-detail.html">Lake View</a></li>
+                <li><a href="rooms-detail.html">Queen Room Balcony</a></li>
+                <li><a href="rooms-detail.html">Studio Sea View</a></li>
+                <li><a href="rooms-list.html">Another Rooms...</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="meeting-rooms.html">Meeting & Event</a>
+            </li>
+            <li>
+              <a href="gallery.html">Pages</a>
+              <ul>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="404.html">404 Page</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="news.html">News</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a
+                href="https://booking-guarantee.com/Home/SelectDate?hotelKey=IIT&lang=en&currency=USD"
+                >Booking</a
+              >
+            </li>
+            <!-- header-booking show in tablet -->
+            <div
+              class="header-booking d-block d-xl-none header-booking__tablet"
+            >
+              <div class="header-booking__item">
+                <span
+                  ><input
+                    type="text"
+                    autocomplete="off"
+                    name="checkIn"
+                    value=""
+                    id="current-date"
+                    placeholder="Check-in"
+                /></span>
+              </div>
+              <div class="header-booking__item">
+                <span
+                  ><input
+                    type="text"
+                    autocomplete="off"
+                    name="checkIn"
+                    value=""
+                    id="current-date"
+                    placeholder="Check-out"
+                /></span>
+              </div>
+              <div class="header-booking__group">
+                <div class="header-booking__item">
+                  <div class="header-booking__select">
+                    <select>
+                      <option value="0">Adults</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="header-booking__item">
+                  <div class="header-booking__select">
+                    <select>
+                      <option value="0">Children</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="header-booking__item">
+                <button>CHECK AVAILABILITY</button>
+              </div>
+            </div>
+          </ul>
         </div>
       </section>
       <section class="header-slide">

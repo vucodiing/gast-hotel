@@ -35,10 +35,15 @@ $(function () {
     if ($("#main-menu").css("left") == "-2000px") {
       $("#main-menu").css("left", "0px");
       $("#show-menu-mobile").css("color", "#000");
+      $("#logo-green").css("display", "block");
+      $("#logo-white").css("display", "none");
       $(".header-fixed").css("background-color", "#fff");
     } else {
       $("#main-menu").css("left", "-2000px");
       $("#show-menu-mobile").css("color", "#fff");
+      $("#logo-green").css("display", "none");
+      $("#logo-white").css("display", "block");
+      $(".header-fixed").css("background-color", "transparent");
     }
   });
 });

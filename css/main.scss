@@ -74,8 +74,21 @@ label.error {
   font-size: 12px;
   color: red;
 }
+// change color when click and move mouse
+::selection {
+  background: $main-color;
+  color: #fff;
+}
+::-moz-selection {
+  background: $main-color;
+  color: #fff;
+}
+::-webkit-selection {
+  background: $main-color;
+  color: #fff;
+}
 
-.no-gutter-padding > [class*="col-"] {
+.no-gutter > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -130,6 +143,7 @@ label.error {
 }
 .header {
   &__logo {
+    padding-left: 20px;
     img#logo-green {
       display: none;
     }
@@ -253,6 +267,7 @@ button.applyBtn {
     padding: 0;
   }
 }
+
 .header-booking__group {
   .header-booking__item {
     width: 50%;
@@ -277,6 +292,7 @@ button.applyBtn {
 }
 #show-menu-mobile {
   color: #fff;
+  padding-right: 20px;
 }
 
 // style main -------------------------------------------->
@@ -777,6 +793,7 @@ button.applyBtn {
       box-shadow: 0 1px 8px 1px #2326331f;
       padding-left: 7px;
       color: $main-color;
+      font-family: $font-content;
       font-weight: 500;
       font-size: 16px;
       &::after {
