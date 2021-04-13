@@ -92,7 +92,66 @@
 }
 
 .meeting-service {
+  padding: 50px 0;
   &__block {
     box-shadow: 0 0 30px 0 #00000014;
   }
+  svg {
+    font-size: 64px;
+    color: $main-color;
+    margin: 10px 0;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-family: $font-content;
+  }
+  &__01,
+  &__02,
+  &__03,
+  &__04,
+  &__05,
+  &__06 {
+    border: #dadddf;
+    border-width: 0;
+    border-style: solid;
+    padding: 20px;
+    border-bottom-width: 1px;
+  }
+}
+
+.meeting-function {
+  &__title {
+    text-align: center;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-family: $font-content;
+    }
+  }
+  &__item {
+    h1 {
+      font-size: 28px;
+      color: unset;
+    }
+    td.no-border-top {
+      border-top: none;
+    }
+  }
+  &__item-title {
+    font-family: $font-content;
+    font-weight: 600;
+    color: unset;
+    margin-bottom: 0;
+  }
+  &__item-content {
+    font-family: $font-content;
+    color: unset;
+    margin-bottom: 0;
+  }
+}
+.contact__form {
+  top: -23px;
 }

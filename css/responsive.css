@@ -64,6 +64,9 @@
     border-bottom-width: 0; }
 
   .meeting-count__02 {
+    border-right-width: 1px; }
+
+  .meeting-service__01, .meeting-service__02, .meeting-service__03, .meeting-service__04, .meeting-service__05, .meeting-service__06 {
     border-right-width: 1px; } }
 @media (min-width: 1024px) {
   .book-a-room img {

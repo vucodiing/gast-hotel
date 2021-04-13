@@ -70,7 +70,47 @@
 .meeting-slide img {
   width: 100%; }
 
-.meeting-service__block {
-  box-shadow: 0 0 30px 0 #00000014; }
+.meeting-service {
+  padding: 50px 0; }
+  .meeting-service__block {
+    box-shadow: 0 0 30px 0 #00000014; }
+  .meeting-service svg {
+    font-size: 64px;
+    color: #0b3d24;
+    margin: 10px 0; }
+  .meeting-service h1 {
+    font-size: 28px; }
+  .meeting-service p {
+    font-family: "Rubik"; }
+  .meeting-service__01, .meeting-service__02, .meeting-service__03, .meeting-service__04, .meeting-service__05, .meeting-service__06 {
+    border: #dadddf;
+    border-width: 0;
+    border-style: solid;
+    padding: 20px;
+    border-bottom-width: 1px; }
+
+.meeting-function__title {
+  text-align: center; }
+  .meeting-function__title h1 {
+    font-size: 36px; }
+  .meeting-function__title p {
+    font-family: "Rubik"; }
+.meeting-function__item h1 {
+  font-size: 28px;
+  color: unset; }
+.meeting-function__item td.no-border-top {
+  border-top: none; }
+.meeting-function__item-title {
+  font-family: "Rubik";
+  font-weight: 600;
+  color: unset;
+  margin-bottom: 0; }
+.meeting-function__item-content {
+  font-family: "Rubik";
+  color: unset;
+  margin-bottom: 0; }
+
+.contact__form {
+  top: -23px; }
 
 /*# sourceMappingURL=meeting-rooms.css.map */

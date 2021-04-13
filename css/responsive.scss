@@ -75,6 +75,16 @@
   .meeting-count__02 {
     border-right-width: 1px;
   }
+  .meeting-service {
+    &__01,
+    &__02,
+    &__03,
+    &__04,
+    &__05,
+    &__06 {
+      border-right-width: 1px;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
