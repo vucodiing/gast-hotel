@@ -15,7 +15,7 @@ body {
   color: $text-color;
   font-size: 15px;
   line-height: 27px;
-  font-weight: 400;
+  font-weight: 500;
 }
 a {
   text-decoration: none;
@@ -941,9 +941,11 @@ footer {
   }
   &__copyright {
     color: #868b98;
+    font-family: $font-content;
     a {
       color: #868b98;
       @include transition();
+
       &:hover {
         color: #fff;
       }
@@ -960,6 +962,7 @@ footer {
     a {
       color: #868b98;
       @include transition();
+      font-family: $font-content;
       &:hover {
         color: #fff;
       }
@@ -968,6 +971,7 @@ footer {
     p {
       margin-bottom: 0;
       color: #868b98;
+      font-family: $font-content;
     }
   }
 }

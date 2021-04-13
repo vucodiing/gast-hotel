@@ -9,11 +9,11 @@ html {
   padding: 0; }
 
 body {
-  font-family: "Frank Ruhl Libre", "Rubik", sans-serif;
+  font-family: "Frank Ruhl Libre", "Quicksand", sans-serif;
   color: #474b56;
   font-size: 15px;
   line-height: 27px;
-  font-weight: 400; }
+  font-weight: 500; }
 
 a {
   text-decoration: none; }
@@ -51,7 +51,7 @@ input,
 textarea,
 select {
   text-indent: 10px;
-  font-family: "Rubik";
+  font-family: "Quicksand";
   font-size: 15px;
   width: 100%;
   color: #474b56; }
@@ -65,7 +65,7 @@ label {
   cursor: pointer; }
 
 label.error {
-  font-family: "Rubik";
+  font-family: "Quicksand";
   font-size: 12px;
   color: red; }
 
@@ -165,7 +165,7 @@ label.error {
       font-size: 12px;
       color: #fff;
       line-height: 16px;
-      font-family: "Rubik", sans-serif; }
+      font-family: "Quicksand", sans-serif; }
   .header-slide img {
     height: 700px;
     width: 100%; }
@@ -223,7 +223,7 @@ button.applyBtn {
     transition: 0.3s ease-in-out;
     font-size: 16px;
     line-height: 20px;
-    font-family: "Rubik";
+    font-family: "Quicksand";
     height: 46px;
     width: 100%;
     font-size: 14px;
@@ -264,7 +264,7 @@ button.applyBtn {
     font-family: "Frank Ruhl Libre"; }
   .book-room p {
     font-size: 14px;
-    font-family: "Rubik"; }
+    font-family: "Quicksand"; }
   .book-room button {
     color: #fff;
     padding: 10px;
@@ -275,7 +275,7 @@ button.applyBtn {
     transition: 0.3s ease-in-out;
     font-size: 16px;
     line-height: 20px;
-    font-family: "Rubik"; }
+    font-family: "Quicksand"; }
     .book-room button:hover {
       background-color: #000; }
   .book-room__padding {
@@ -299,7 +299,7 @@ button.applyBtn {
     width: 50px; }
   .rooms p {
     font-size: 12px;
-    font-family: "Rubik";
+    font-family: "Quicksand";
     text-transform: uppercase; }
   .rooms__list-item {
     position: relative;
@@ -386,13 +386,13 @@ button.applyBtn {
       transition: 0.3s ease-in-out;
       font-size: 16px;
       line-height: 20px;
-      font-family: "Rubik";
+      font-family: "Quicksand";
       width: 100%;
       margin-top: 15px; }
       .rooms__list-booking button:hover {
         background-color: #000; }
     .rooms__list-booking span {
-      font-family: "Rubik"; }
+      font-family: "Quicksand"; }
   .rooms__list-price {
     display: flex;
     align-items: center;
@@ -400,7 +400,7 @@ button.applyBtn {
   .rooms .checked {
     color: orange; }
   .rooms__list-name {
-    font-family: "Rubik";
+    font-family: "Quicksand";
     bottom: 0;
     left: 0;
     background-color: #fff;
@@ -432,7 +432,7 @@ button.applyBtn {
     width: 50px; }
   .restaurant p {
     font-size: 12px;
-    font-family: "Rubik";
+    font-family: "Quicksand";
     text-transform: uppercase; }
   .restaurant__item {
     padding: 20px 0; }
@@ -443,7 +443,7 @@ button.applyBtn {
     font-family: "Frank Ruhl Libre"; }
   .restaurant__item-block p {
     font-size: 14px;
-    font-family: "Rubik";
+    font-family: "Quicksand";
     text-transform: unset; }
   .restaurant__item-block a {
     color: #0b3d24; }
@@ -502,7 +502,7 @@ button.applyBtn {
     width: 50px; }
   .guest p {
     font-size: 12px;
-    font-family: "Rubik";
+    font-family: "Quicksand";
     text-transform: uppercase; }
   .guest__item img {
     width: 100%; }
@@ -512,7 +512,7 @@ button.applyBtn {
   .guest__item span {
     font-size: 14px;
     color: #8d929d;
-    font-family: "Rubik"; }
+    font-family: "Quicksand"; }
   .guest__item p {
     font-size: 14px;
     text-transform: unset; }
@@ -550,7 +550,7 @@ button.applyBtn {
     width: 50px; }
   .event p {
     font-size: 14px;
-    font-family: "Rubik";
+    font-family: "Quicksand";
     color: #8d929d;
     text-align: start; }
   .event__small {
@@ -612,7 +612,7 @@ button.applyBtn {
     transition: 0.3s ease-in-out;
     font-size: 14px;
     line-height: 46px;
-    font-family: "Rubik"; }
+    font-family: "Quicksand"; }
     .event button:hover {
       background-color: #fff;
       color: #0b3d24; }
@@ -643,7 +643,7 @@ button.applyBtn {
     width: 50px; }
   .articles p {
     font-size: 14px;
-    font-family: "Rubik";
+    font-family: "Quicksand";
     color: #8d929d; }
   .articles__item {
     overflow: hidden;
@@ -715,7 +715,7 @@ button.applyBtn {
     transition: 0.3s ease-in-out;
     font-size: 16px;
     line-height: 20px;
-    font-family: "Rubik";
+    font-family: "Quicksand";
     margin-top: 40px; }
     .articles button.all-articles:hover {
       background-color: #000; }
@@ -752,7 +752,7 @@ button.applyBtn {
     transition: 0.3s ease-in-out;
     font-size: 16px;
     line-height: 20px;
-    font-family: "Rubik";
+    font-family: "Quicksand";
     width: 100%; }
     .contact__us-item button:hover {
       background-color: #000; }
@@ -792,7 +792,7 @@ button.applyBtn {
       transition: 0.3s ease-in-out;
       font-size: 16px;
       line-height: 20px;
-      font-family: "Rubik"; }
+      font-family: "Quicksand"; }
       .book-a-room .bookARoom button:hover {
         background-color: #000; }
 
@@ -872,6 +872,7 @@ footer {
     color: #868b98; }
 .footer-contact__copyright {
   color: #868b98;
+  font-family: "Quicksand";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -894,12 +895,14 @@ footer {
     color: #868b98;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
+    transition: 0.3s ease-in-out;
+    font-family: "Quicksand"; }
     .footer-contact__info a:hover {
       color: #fff; }
   .footer-contact__info p {
     margin-bottom: 0;
-    color: #868b98; }
+    color: #868b98;
+    font-family: "Quicksand"; }
 
 @-webkit-keyframes fadeInUpSD {
   0% {
